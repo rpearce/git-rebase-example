@@ -7,7 +7,7 @@ set -eou pipefail
 
 BUILD_DIR="./dist"
 
-function get_img_md5sums {
+function get_asset_md5sums {
   find . \
     -type f \
     ! -path "./.git/*" \
@@ -38,7 +38,7 @@ function main {
     file_with_sum="${file_name}.${sum}.${file_ext}"
 
     cat "${file}" > "${BUILD_DIR}/${file_with_sum}"
-  done < <(get_img_md5sums)
+  done < <(get_asset_md5sums)
 }
 
 main

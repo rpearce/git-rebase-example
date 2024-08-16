@@ -27,6 +27,8 @@ function get_asset_md5sums {
     -exec md5sum '{}' +
 }
 
+
+
 function main {
   # Recreate build dir
   rm -rf "${BUILD_DIR}" && mkdir -p "${BUILD_DIR}"

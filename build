@@ -23,6 +23,7 @@ function get_asset_md5sums {
        -iname "*.png" -o \
        -iname "*.svg" -o \
        -iname "*.webp" \
+
     \) \
     -exec md5sum '{}' +
 }

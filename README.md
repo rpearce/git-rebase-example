@@ -24,14 +24,15 @@ Dive right in!
 1. Simple amending of commits with `git commit --amend`
 1. Fixup, squash, reword, and delete our garbage commits with `git rebase -i`
 1. A word about `git push`'s `--force` vs `--force-with-lease`
-1. Branching off branches, keeping up with rebasing, parent branch gets merged
-   to `main`, and what now? `git rebase --onto` ftw
-1. Survival tip: assume people are rebasers
+1. Survival tip: assume everyone is a secret rebaser & force pusher
+   * `git pull --rebase origin/the-branch`
    * `git config --global pull.rebase true`, or in `.gitconfig`:
       ```
       [pull]
         rebase = true
       ```
+1. Branching off branches, keeping up with rebasing, parent branch gets merged
+   to `main`, and what now? `git rebase --onto` ftw
 1. Rebasing Etiquette, or: How to Not Make People Hate You
 
 ## Links
@@ -41,4 +42,5 @@ Dive right in!
 * https://docs.github.com/en/get-started/using-git/about-git-rebase
 * https://jvns.ca/blog/2023/11/06/rebasing-what-can-go-wrong-/
 * https://git-scm.com/docs/git-push
+* https://git-scm.com/docs/git-pull
 * https://git-scm.com/docs/git-commit

@@ -31,6 +31,9 @@ function main {
   # Recreate build dir
   rm -rf "${BUILD_DIR}" && mkdir -p "${BUILD_DIR}"
 
+  # Ensure our variables stay local to the function
+  local file_basename file_name file_ext file_with_sum
+
   # Get all image MD5 checksums, write each file to a new
   # file with the checksum in the name.
   while read -r sum file; do

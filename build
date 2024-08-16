@@ -12,7 +12,9 @@ function get_asset_md5sums {
     -type f \
     ! -path "./.git/*" \
     ! -path "${BUILD_DIR}/*" \
-    \( -iname "*.avif" -o \
+    \( -iname "*.css" -o \
+       -iname "*.js" -o \
+       -iname "*.avif" -o \
        -iname "*.bmp" -o \
        -iname "*.gif" -o \
        -iname "*.heif" -o \

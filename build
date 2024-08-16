@@ -48,4 +48,5 @@ function main {
   done < <(get_asset_md5sums)
 }
 
+
 main

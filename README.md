@@ -26,7 +26,7 @@ Dive right in!
    * Reminder: drop the bass
 1. A word about `git push`'s `--force` vs `--force-with-lease`
 1. Survival tip: assume everyone is a secret rebaser & force pusher
-   * `git pull --rebase origin/the-branch`
+   * `git pull --rebase origin the-branch`
    * `git config --global pull.rebase true`, or in `.gitconfig`:
       ```
       [pull]
